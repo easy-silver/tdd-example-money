@@ -1,7 +1,10 @@
 public class Dollar extends Money {
 
+    private String currency;
+
     public Dollar(int amount) {
         this.amount = amount;
+        currency = "USD";
     }
 
     public Money times(int multiplier) {
@@ -10,6 +13,6 @@ public class Dollar extends Money {
 
     @Override
     public String currency() {
-        return "USD";
+        return currency;
     }
 }
