@@ -1,4 +1,4 @@
-public class Money {
+public abstract class Money {
 
     protected int amount;
 
@@ -8,7 +8,7 @@ public class Money {
      * @param amount
      * @return Dollar 인스턴스
      */
-    public static Dollar dollar(int amount) {
+    public static Money dollar(int amount) {
         return new Dollar(amount);
     }
 
@@ -17,4 +17,6 @@ public class Money {
         Money money = (Money) object;
         return amount == money.amount && getClass().equals(money.getClass());
     }
+
+    public abstract Money times(int multiplier);
 }
