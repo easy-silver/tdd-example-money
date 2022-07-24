@@ -1,6 +1,7 @@
 public abstract class Money {
 
     protected int amount;
+    protected String currency;
 
     /**
      * Dollar를 반환하는 팩토리 메서드
@@ -23,5 +24,9 @@ public abstract class Money {
     }
 
     public abstract Money times(int multiplier);
-    public abstract String currency();
+
+    public String currency() {
+        return currency;
+    }
+
 }
