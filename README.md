@@ -1,1 +1,2 @@
-# [책] 테스트 주도 개발(Test-Driven Development By Example) - 켄트 벡
+# [책] 테스트 주도 개발 - 켄트 벡
+Test-Driven Development By Example
