@@ -45,4 +45,11 @@ public class MoneyTest {
         assertEquals("CHF", Money.franc(1).currency());
     }
 
+    /**
+     * 서로 같은 통화의 동치성 비교
+     */
+    @Test
+    public void testDifferentClassEquality() {
+        assertTrue(new Money(10, "CHF").equals(new Franc(10, "CHF")));
+    }
 }
