@@ -3,6 +3,11 @@ public abstract class Money {
     protected int amount;
     protected String currency;
 
+    public Money(int amount, String currency) {
+        this.amount = amount;
+        this.currency = currency;
+    }
+
     /**
      * Dollar를 반환하는 팩토리 메서드
      *
